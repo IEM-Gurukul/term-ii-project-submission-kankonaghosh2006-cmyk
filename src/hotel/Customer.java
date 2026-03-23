@@ -8,5 +8,6 @@ class Customer extends User {
 
     void display() {
         System.out.println("Customer Name: " + name);
+        
     }
 }
