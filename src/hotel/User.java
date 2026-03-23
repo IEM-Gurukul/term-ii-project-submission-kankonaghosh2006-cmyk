@@ -1,5 +1,4 @@
 package hotel;
-
 abstract class User {
     String name;
 
