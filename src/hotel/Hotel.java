@@ -25,8 +25,22 @@ class Hotel {
             bookings.add(b);
             System.out.println("Room booked successfully!");
             return;
+            
         }
     }
+    
     System.out.println("Room not available!");
+   
+}
+void cancelBooking(int roomNumber) {
+    for (Booking b : bookings) {
+        if (b.room.roomNumber == roomNumber) {
+            b.room.isAvailable = true;
+            bookings.remove(b);
+            System.out.println("Booking cancelled!");
+            return;
+        }
+    }
+    System.out.println("Booking not found!");
 }
 }
