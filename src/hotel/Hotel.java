@@ -43,4 +43,9 @@ void cancelBooking(int roomNumber) {
     }
     System.out.println("Booking not found!");
 }
+void showBookings() {
+    for (Booking b : bookings) {
+        b.display();
+    }
+}
 }
