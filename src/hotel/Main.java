@@ -4,7 +4,8 @@ package hotel;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Main {
+public class Main 
+{
     
     public static void main(String[] args) 
     {
@@ -26,7 +27,6 @@ public class Main {
 
             try {
                 int choice = sc.nextInt();
-
                 switch (choice) {
                     case 1:
                         hotel.viewRooms();
